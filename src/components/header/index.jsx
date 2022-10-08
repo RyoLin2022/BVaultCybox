@@ -6,12 +6,10 @@ import menus from '../../pages/menu';
 import { ethers } from 'ethers'
 import './styles.scss';
 import logo from '../../assets/images/logo/logo.png'
-import Button from '../button';
 
 let currentAccount = null;
 
 const Header = () => {
-    connectWallet();
 
     const [WalletAddress, setWalletAddress] = useState(null)
     async function changingAccount() {
